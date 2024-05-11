@@ -1,0 +1,14 @@
+{
+    "data" : [
+        {
+            "username":"deneme123@test.com",
+            "password": "Deneme@12345"
+        },
+        {
+            "username": "ornekKullanici",
+            "password": "ornekPassword"
+        }
+
+       
+    ]
+}
