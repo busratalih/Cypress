@@ -1,12 +1,10 @@
-
-
 {
   "name": "cypress-dersleri-clarusway",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run" : "cypress run",
+    "cy:run": "cypress run",
     "cy:open": "cypress open",
     "cy:open:e2e": "cypress open --e2e",
     "cy:open:chrome": "cypress open --e2e --browser chrome",
@@ -31,6 +29,9 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.8.1",
+    "cypress-delete-downloads-folder": "^0.0.5",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1"
   }
 }
