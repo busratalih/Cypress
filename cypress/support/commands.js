@@ -26,6 +26,7 @@
 
 import "cypress-file-upload"
 import "cypress-iframe"
+import "cypress-if"
 
 require('cypress-delete-downloads-folder').addCustomCommands()
 
