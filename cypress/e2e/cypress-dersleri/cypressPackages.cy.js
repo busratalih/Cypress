@@ -38,4 +38,15 @@ describe('Cypress packages', () => {
             cy.get('#flash-message').if('contain', 'Your username is invalid!').log('Test tamam')
         }).else().log('TEst tamamlanamadi!')
     });
+
+
+
+    it('Cypress Trigger Kullanimi', () => {
+        cy.on('uncaught:exception', (err, runnable) => { return false })
+        cy.visit('https://the-internet.herokuapp.com/drag_and_drop')
+        cy.get('#column-a').trigger('mousedown', {button: 0})
+        cy.get('#column-b').trigger('mousemove').trigger('mouseup', {force:true})
+    });
+
+    
 });
