@@ -21,6 +21,8 @@ import './customCommands/homepage/homepage'
 import registerCypressGrep from '@cypress/grep/src/support'
 registerCypressGrep()
 
+import "cypress-real-events"
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 

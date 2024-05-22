@@ -48,5 +48,12 @@ describe('Cypress packages', () => {
         cy.get('#column-b').trigger('mousemove').trigger('mouseup', {force:true})
     });
 
-    
+    it('Cypress Real events', () => {
+        cy.visit('https://practice.expandtesting.com/hovers')
+        cy.wait(1000)
+        cy.get('div.figure').first().realHover().then(() => {
+            cy.wait(3000)
+            cy.get('div:nth-child(4) > div > a').realClick()
+        })
+    });
 });
