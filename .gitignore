@@ -1,0 +1,9 @@
+downloads
+*reports
+screenshots
+videos
+Documents
+node_modules
+allure-results
+credentials.json
+.env

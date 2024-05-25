@@ -39,4 +39,5 @@ if(!app.document.head.querySelector('[data-hide-command-log-request]')) {
 
 import 'cypress-mochawesome-reporter/register';
 import "allure-cypress/commands";
+import '@cypress-audit/lighthouse/commands'
 
