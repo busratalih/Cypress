@@ -27,5 +27,7 @@ module.exports = defineConfig({
     baseUrl: process.env.URL,
     specPattern: 'cypress/e2e/**/*.{js, jsx, ts, tsx}',
     experimentalStudio: true,
+    experimentalWebKitSupport: true,
+    experimentalRunAllSpecs: true
   },
 });

@@ -23,7 +23,10 @@
     "cy:cache:list": "cypress cache list",
     "cy:verify": "cypress verify",
     "cy:e2e:firstFolder": "cypress run --spec 'cypress/e2e/1-getting-started/'",
-    "cy:e2e:cypress-dersleri": "cypress run --spec 'cypress/e2e/cypress-dersleri/' --browser chrome --headed"
+    "cy:e2e:cypress-dersleri": "cypress run --spec 'cypress/e2e/cypress-dersleri/' --browser chrome --headed",
+    "cy:parallel:cypress-dersleri": "cypress-parallel -d cypress/e2e/cypress-dersleri -t 3 -s cy:run:headed",
+    "cy:parallel:advanced-examples": "cypress-parallel -d cypress/e2e/2-advanced-examples -t 5 -s cy:run:headless",
+    "cy:parallel:getting-started": "cypress-parallel -d cypress/e2e/1-getting-started -t 10 -s cy:run:headed"
   },
   "author": "",
   "license": "ISC",
@@ -39,9 +42,11 @@
     "cypress-if": "^1.12.0",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "playwright-webkit": "^1.44.1"
   },
   "dependencies": {
+    "cypress-parallel": "^0.14.0",
     "cypress-real-events": "^1.12.0"
   }
 }
